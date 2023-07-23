@@ -1,5 +1,5 @@
 import React from 'react'
-import heroImg from '../../img/restaurantfood.jpg';
+import heroImg from '../../img/heroimg.jpg'
 
 const Hero = () => {
   return (
@@ -13,7 +13,7 @@ const Hero = () => {
             </button>
         </div>
         <div>
-            <img alt="resturantfood"></img>
+            <img src={heroImg} alt="resturantfood"></img>
         </div>
     </section>
   )
