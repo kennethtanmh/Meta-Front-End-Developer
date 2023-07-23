@@ -1,22 +1,30 @@
 import React from 'react'
 import heroImg from '../../img/heroimg.jpg'
+import './styles.css'
 
 const Hero = () => {
-  return (
-    <section>
-        <div>
-            <h1>Little Lemon</h1>
-            <h2>Chicago</h2>
-            <h3>We are a family owned Mediterranean restaurant,focused on traditional recipes served with a mordern twist.</h3>
-            <button>
-                Reserve a Table
-            </button>
+    return (
+      <section className='hero'>
+        <div className='main-container'>
+          <h1 className='main-title'>Little Lemon</h1>
+          <h3 className='main-subtitle'>Chicago</h3>
+          <h4 className='main-text'>
+            We are a family owned Mediterranean restaurant, focused on traditional
+            recipes served with a modern twist.
+          </h4>
+          <button to='/bookings' className='reserve-button'>
+            Reserve a Table
+          </button>
         </div>
-        <div>
-            <img src={heroImg} alt="resturantfood"></img>
+        <div className='image-container'>
+          <img
+            src={heroImg}
+            alt='restaurant food'
+            className='display-image'
+          />
         </div>
-    </section>
-  )
-}
-
-export default Hero
+      </section>
+    );
+  };
+  
+  export default Hero;

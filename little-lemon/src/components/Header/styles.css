@@ -6,7 +6,7 @@ header {
 .navbar {
   display: flex;
   list-style: none;
-  padding: 0;
+  padding: 1rem;
   margin: 0;
   align-items: center;
 }
@@ -22,3 +22,12 @@ header {
   color: #333333;
 }
 
+.button {
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    background-color: #f4ce14;
+    color: #333333;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
