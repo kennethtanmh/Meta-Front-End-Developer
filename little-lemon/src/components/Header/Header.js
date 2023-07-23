@@ -1,11 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import logo from '../../img/Logo.svg'
 import './styles.css'
 
-export class Header extends Component {
-  render() {
-    return (
-      <header>
+const Header = () => {
+  return (
+    <nav>
       <ul className='navbar'>
         <li className='logo'>
           <img src={logo} alt="Little Lemon Logo" />
@@ -17,8 +16,10 @@ export class Header extends Component {
         <li><a href='/Order'>Order Online</a></li>
         <li><a href='/Login'>Login</a></li>
       </ul>
-    </header>
-    )
-  }
+    </nav>
+  )
 }
+
 export default Header
+
+

@@ -1,14 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-
-export class Footer extends Component {
-  render() {
-    return (
-      <footer>
-        <p>Ken • © 2023</p>
-      </footer>
-    )
-  }
+const Footer = () => {
+  return (
+    <p>Ken • © 2023</p>
+  )
 }
 
 export default Footer
