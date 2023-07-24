@@ -4,9 +4,9 @@ import TestimonialCard from  '../TestimonialCard/TestimonialCard'
 
 const Testimonials = () => {
   return (
-    <section className='testimonial'>
-      <div className='testimonial-header'>
-        <h1 className='testimonial-title'>Elevating Culinary Experiences: Hear from Our Cherished Guests!"</h1>
+    <section className='testimonials'>
+      <div className='testimonials-header'>
+        <h1 className='testimonials-title'>Elevating Culinary Experiences: Hear from Our Cherished Guests!"</h1>
       </div>
       <TestimonialCard />
     </section>
@@ -14,3 +14,5 @@ const Testimonials = () => {
 }
 
 export default Testimonials
+
+

@@ -42,7 +42,7 @@ const SpecialCard = () => {
                 <img src={image} alt={name} className='specials-image' />
               </div>
               <div className='specials-details'>
-                <div className='specials-name'>
+                <div className='main-text-name'>
                   <p>{name}</p>
                   <p className='specials-price'>{price}</p>
                 </div>
