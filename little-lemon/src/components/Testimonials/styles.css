@@ -1,0 +1,17 @@
+.testimonial {
+    height: 100vh;
+    background-color: #495e57;
+    padding: 8rem 2rem;
+}
+
+.testimonial-header {
+    display: grid;
+    place-items: center;
+  }
+
+
+.testimonial-title{
+    font-weight: 700;
+    font-size: 48px;
+    color: #EDEFEE;
+}
