@@ -3,6 +3,7 @@
     background-color: #495e57;
     color: #edefee;
     padding: 2rem;
+    font-family: 'Markazi Text', serif;
 }
 
 .testimonials-header {
@@ -12,4 +13,8 @@ align-items: center;
 text-align: center;
 }
 
-
+.testimonials-title {
+  font-weight: 800;
+  font-size: 48px;
+  color: #f4ce14;
+}
