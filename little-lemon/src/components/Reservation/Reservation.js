@@ -2,9 +2,9 @@ import React from 'react'
 import heroImg from '../../img/heroimg.jpg'
 import './styles.css'
 
-const Hero = () => {
+const Reservation = () => {
     return (
-      <section className='hero'>
+      <section className='hero reservation'>
         <div className='main-container'>
           <h1 className='main-title'>Little Lemon</h1>
           <h3 className='main-subtitle'>Chicago</h3>
@@ -27,4 +27,4 @@ const Hero = () => {
     );
   };
   
-  export default Hero;
+  export default Reservation;

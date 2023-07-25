@@ -7,7 +7,7 @@ import footerimg from '../../img/footer.png';
 const links = [
   {
     id: 1,
-    link: 'about',
+    link: 'reservation',
   },
   {
     id: 2,
@@ -19,8 +19,12 @@ const links = [
   },
   {
     id: 4,
-    link: 'contact',
+    link: 'about',
   },
+  {
+    id:5 ,
+    link: 'contact',
+  }
 ];
 
 const contacts = [
@@ -60,7 +64,6 @@ const socials = [
 ];
 
 const Footer = () => {
-  // NAVLINKS
   const navLinks = links.map(({ link, id }) => {
     return (
       <li key={id}>
@@ -71,7 +74,6 @@ const Footer = () => {
     );
   });
 
-  //CONTACTS
   const contactLinks = contacts.map(({ link, id, title }) => {
     return (
       <li key={id}>
@@ -81,8 +83,6 @@ const Footer = () => {
       </li>
     );
   });
-
-  // SOCIAL LINKS
 
   const socialLinks = socials.map(({ id, child, link }) => {
     return (
@@ -131,9 +131,11 @@ const Footer = () => {
         </ul>
       </nav>
 
-      <p className='copyright'>
+      <p className='credits'>
         <a
           className='linkedin-link'
+          target={'_blank'}
+          rel='noreferrer'
           href='https://www.linkedin.com/'
         >
           Kenneth © 2023
