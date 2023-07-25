@@ -5,15 +5,15 @@
 }
 
 .specials-header {
-    display: grid;
+    display: flex;
     place-items: center;
   }
 
 
 .specials-title{
-    font-weight: 900;
+    font-weight: 100;
     font-size: 30px;
-    color: #f4ce14;
+    color: #333333;
 }
 
 
@@ -25,7 +25,7 @@
     padding: 1rem 2rem;
     border-radius: 0.5rem;
     width: 200px;
-    border: none;
+
   }
 
 
@@ -36,6 +36,12 @@
 
   .specials-title {
     font-size: 64px;
+  }
+
+  .specials-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 }
 
@@ -48,12 +54,18 @@
   .specials-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
 @media (min-width: 1440px) {
   .specials {
     padding: 10rem 20rem;
+  }
+
+  .specials-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 }

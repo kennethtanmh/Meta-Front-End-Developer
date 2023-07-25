@@ -15,15 +15,15 @@ const links = [
   },
   {
     id: 3,
-    link: 'testimonials',
+    link: 'reviews',
   },
   {
     id: 4,
-    link: 'about',
+    link: 'about us',
   },
   {
     id:5 ,
-    link: 'contact',
+    link: 'contact us',
   }
 ];
 
@@ -110,7 +110,7 @@ const Footer = () => {
           {navLinks}
         </ul>
 
-        <ul className='grid-item-contact'>
+        <ul className='grid-item-contact contact us'>
           <p className='footer-title'>Contact</p>
           <address>
             Address:

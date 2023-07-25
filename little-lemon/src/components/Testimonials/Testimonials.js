@@ -49,7 +49,7 @@ const Testimonials = () => {
   });
 
   return (
-    <section className='testimonials'>
+    <section className='testimonials reviews'>
       <div className='testimonials-header'>
         <h1 className='testimonials-title'>Elevating Culinary Experiences: Hear from Our Cherished Guests!</h1>
       </div>

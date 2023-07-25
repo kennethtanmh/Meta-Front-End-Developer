@@ -5,7 +5,7 @@ import chef2 from '../../img/chef2.jpg'
 
 const About = () => {
   return (
-    <section name='about' className='about'>
+    <section name='about' className='about us'>
       <div className='about-container'>
         <h1 className='about-title'>Little Lemon / Chicago</h1>
         <p className='about-text'>
@@ -16,14 +16,14 @@ const About = () => {
       <div className='about-image-container'>
         <div className='about-container-one'>
           <img
-            src={chef1}
+            src={chef2}
             alt='chefs'
             className='about-image-one'
           />
         </div>
         <div className='about-container-two'>
           <img
-            src={chef2}
+            src={chef1}
             alt='chefs'
             className='about-image-two'
           />
