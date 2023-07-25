@@ -1,5 +1,5 @@
 import Header from './components/Header/Header';
-import Reservation from './components/Reservation/Reservation';
+import Hero from './components/Hero/Hero';
 import Specials from './components/Specials/Specials';
 import Testimonials from './components/Testimonials/Testimonials';
 import About from './components/About/About';
@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Header />
-      <Reservation />
+      <Hero />
       <Specials />
       <Testimonials />
       <About />
