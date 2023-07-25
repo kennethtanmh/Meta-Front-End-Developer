@@ -40,6 +40,13 @@
   height: 250px;
 }
 
+.about-text-2 {
+  font-size: 32px;
+  color: #f4ce14;
+  font-family: 'Karla', sans-serif;
+  font-weight: 900;
+  text-align: center;
+}
 
 @media (min-width: 768px) {
   .testimonials-card {
