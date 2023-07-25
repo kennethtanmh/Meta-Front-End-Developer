@@ -22,7 +22,6 @@
     border-radius: 1rem 1rem 0 0;
 }
 
-/* The object-fit property specifies how the content of an element should be resized to fit within its container. In this case, the value cover is used, which means that the image (or content) inside the element will be proportionally scaled to cover the entire available area of the container. */
 .specials-image {
     object-fit: cover;
     height: 250px;
@@ -39,7 +38,7 @@
 }
 
 .specials-description {
-    height: 160px;
+    height: 20vh; /* Let the content adjust its height */
     padding: 30px 0;
 }
 
@@ -51,55 +50,44 @@
 
 @media (min-width: 768px) {
     .card-list {
-      grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* Updated for smoother transition */
     }
 }
 
 @media (min-width: 1024px) {
-  .card-container {
-    width: 350px;
-    display: flex;
-  }
-
-  .specials-image-container {
-    width: 350px;
-  }
-
-  .specials-image {
-    height: 300px;
-  }
+    .card-list {
+        grid-template-columns: repeat(3, 1fr); /* Updated for smoother transition */
+    }
 }
 
 @media (min-width: 1440px) {
-  .card-list {
-    gap:1rem;
-    display: flex;
-  }
+    .card-list {
+        gap: 1rem;
+    }
 
-  .card-container {
-    width: 250px;
-  }
+    .card-container {
+        width: 200px;
+    }
 
-  .specials-image-container {
-    width: 250px;
-  }
+    .specials-image-container {
+        width: 200px;
+    }
 
-  .specials-image {
-    height: 200px;
-  }
+    .specials-image {
+        height: 200px;
+    }
 }
 
 @media (min-width: 1728px) {
-  .card-container {
-    width: 400px;
-  }
+    .card-container {
+        width: 400px;
+    }
 
-  .specials-image-container {
-    width: 400px;
-  }
+    .specials-image-container {
+        width: 400px;
+    }
 
-  .specials-image {
-    height: 350px;
-  }
+    .specials-image {
+        height: 350px;
+    }
 }
-  

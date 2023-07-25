@@ -30,6 +30,7 @@
 
 .menu:hover {
   background-color:#f4ce14;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
