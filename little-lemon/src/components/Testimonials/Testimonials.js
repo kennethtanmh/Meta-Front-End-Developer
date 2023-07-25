@@ -1,39 +1,48 @@
 import React from 'react'
 import './styles.css'
+import harry from '../../img/harry.jpeg'
+import bruno from '../../img/bruno.jpeg'
+import lizz from '../../img/lizz.jpeg'
+import victor from '../../img/victor.jpeg'
 
 const reviews = [
   {
     id: 1,
-    name: 'Marcus Rashford',
+    name: 'Victor Lindelöf',
+    img: victor,
     comment:
-      '"The famous greek salad of crispy lettuce, peppers, olives, and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons."',
+      '"The fresh ingredients made it stand out."',
   },
   {
     id: 2,
     name: 'Bruno Fernandes',
+    img: bruno,
     comment:
-      '"Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive."',
+      '"The flavors were on point with a unique touch."',
   },
   {
     id: 3,
     name: 'Lisandro Martínez',
+    img: lizz,
     comment:
-      '"This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined."',
+      '"Lemon Dessert at Little Lemon is a game-changer!"',
   },
   {
     id: 4,
     name: 'Harry Maguire',
+    img: harry,
     comment:
-      '"This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined."',
+      '"I wish I could perform as impressively as the food!"',
   },
 ];
 
 
 const Testimonials = () => {
-  const playerReviews = reviews.map(({ id, name , comment }) => {
+  const playerReviews = reviews.map(({ id, name, img , comment }) => {
     return (
         <div key={id} className='testimonials-map-container'>
         <p className='testimonials-name'>{name}</p>
+        <img src={img} alt='player reviews' className='testimonials-player-img'/>
         <p className='testimonials-description'>{comment}</p>
       </div>
     );

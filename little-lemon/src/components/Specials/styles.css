@@ -1,6 +1,6 @@
 .specials {
     height: 100%;
-    padding: 8rem 2rem;
+    padding: 2rem 2rem;
     background-color: #edefee;
 }
 
@@ -11,16 +11,16 @@
 
 
 .specials-title{
-    font-weight: 400;
+    font-weight: 500;
     font-size: 30px;
-    color: #333333;
+    color: #f4ce14;
 }
 
 
 .menu {
     font-family: 'Karla', sans-serif;
     font-weight: bold;
-    background-color: #fbdabb;
+    background-color: #f4ce14;
     color: #333333;
     padding: 1rem 2rem;
     border-radius: 0.5rem;
