@@ -17,7 +17,7 @@
 .main-title {
   font-weight: 500;
   font-size: 48px;
-  color: #f4ce14;
+  color: #edefee;
 }
 
 .main-subtitle {
@@ -47,7 +47,7 @@
 .reserve-button {
   font-family: 'Karla', sans-serif;
   font-weight: 800;
-  background-color: #f4ce14;
+  background-color: #edefee;
   color: #333;
   padding: 1rem 2rem;
   border-radius: 0.5rem;

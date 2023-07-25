@@ -11,23 +11,25 @@
 
 
 .specials-title{
-    font-weight: 100;
+    font-weight: 300;
     font-size: 30px;
-    color: #333333;
+    color: #495e57;
 }
 
 
 .menu {
     font-family: 'Karla', sans-serif;
     font-weight: bold;
-    background-color: #f4ce14;
-    color: #333333;
+    background-color: #495e57;
+    color: #edefee;
     padding: 1rem 2rem;
     border-radius: 0.5rem;
     width: 200px;
-
   }
 
+.menu:hover {
+  background-color:#f4ce14;
+}
 
 @media (min-width: 768px) {
   .specials {
