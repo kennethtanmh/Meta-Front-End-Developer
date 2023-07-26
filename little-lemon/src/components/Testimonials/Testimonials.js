@@ -55,7 +55,7 @@ const Testimonials = () => {
       </div>
       <div className='testimonials-card'>{playerReviews}</div>
       <p className='about-text-2'>
-          Score a Winning Discount! Wear Your Man United Jersey for 10% Off at Little Lemon
+          Score A Winning Discount! Wear Your Man United Jersey For 10% Off At Little Lemon
       </p>
       <p className='about-text-2'>
         "Where Football & Flavors Unite!"
