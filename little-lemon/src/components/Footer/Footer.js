@@ -99,10 +99,14 @@ const Footer = () => {
     );
   });
 
+  const handleLogoClick = () => {
+    window.location.reload()
+    window.scrollTo(0, 0);
+  }
   return (
     <footer name='contact'>
       <nav className='footer-container'>
-        <div className='footer-photo-container'>
+        <div className='footer-photo-container' onClick={handleLogoClick}>
           <img src={footerimg} className='footer-photo' alt='logo' />
         </div>
         <ul className='grid-item-nav'>

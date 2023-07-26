@@ -15,6 +15,10 @@ footer {
   grid-column: 3 / span 2;
 }
 
+.footer-photo-container:hover {
+  cursor: pointer;
+}
+
 .footer-photo {
   object-fit: cover;
   height: 300px;
@@ -117,7 +121,7 @@ footer {
   }
 
   .footer-photo-container {
-    grid-column: 1 / span 2;    
+    grid-column: 1 / span 2;
   }
 
   .grid-item-nav {

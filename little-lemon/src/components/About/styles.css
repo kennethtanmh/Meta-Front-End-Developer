@@ -101,7 +101,7 @@ height: 200px;
 
 @media (min-width: 1024px) {
 .about {
-    padding: 6rem;
+    padding: 1rem 2rem;
 }
 
 .about-image-container {
@@ -130,11 +130,10 @@ height: 200px;
 
 @media (min-width: 1440px) {
 .about {
-    padding: 8rem 12rem;
+    padding: 1rem 8rem;
     grid-template-columns: repeat(2, 1fr);
     text-align: left;
     justify-content: center;
     align-items: center;
 }
 }
-  
