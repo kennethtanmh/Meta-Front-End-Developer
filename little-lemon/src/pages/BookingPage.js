@@ -1,17 +1,14 @@
 import React from 'react';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
+import BookingForm from '../components/BookingForm/BookingForm'
+
 
 const BookingPage = () => {
   return (
     <>
-      <Header />
-      <main>
-        <p>This is my booking page</p>
-      </main>
-      <Footer />
+      <BookingForm />
     </>
   );
 };
 
 export default BookingPage;
+
