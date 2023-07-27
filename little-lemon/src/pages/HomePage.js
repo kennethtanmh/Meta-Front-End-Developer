@@ -15,8 +15,8 @@ const HomePage = () => {
             <Specials />
             <Testimonials />
             <About />
-            <Footer />
           </main>
+          <Footer />
         </>
       );
     }

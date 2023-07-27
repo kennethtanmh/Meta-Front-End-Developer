@@ -1,9 +1,17 @@
-import React from 'react'
+import React from 'react';
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
 
 const BookingPage = () => {
   return (
-    <div>BookingPage</div>
-  )
-}
+    <>
+      <Header />
+      <main>
+        <p>This is my booking page</p>
+      </main>
+      <Footer />
+    </>
+  );
+};
 
-export default BookingPage
+export default BookingPage;
