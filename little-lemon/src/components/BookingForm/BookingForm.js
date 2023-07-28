@@ -77,6 +77,10 @@ const BookingForm = () => {
     navigate(-1);
   };
 
+  function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
   return (
     <section className="bookingform">
       <nav className="navbar">
@@ -103,7 +107,12 @@ const BookingForm = () => {
             name="name"
             value={formData.name}
             required
-            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+            onChange={(e) =>
+              setFormData({
+                ...formData,
+                name: capitalizeFirstLetter(e.target.value),
+              })
+            }
           />
 
           <label htmlFor="email">Email:</label>
