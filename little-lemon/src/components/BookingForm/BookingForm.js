@@ -27,6 +27,7 @@ const BookingForm = () => {
     "Birthday",
     "Engagement",
     "Wedding",
+    "None",
   ];
 
   const navigate = useNavigate();
@@ -89,106 +90,98 @@ const BookingForm = () => {
       </nav>
       <div className="booking-container">
         <div className="booking-headings">
-          <h1 className="booking-headings-1">Make a reservation</h1>
-          <h2 className="booking-headings-2">
+          <h1 className="subheading">Make a reservation</h1>
+          <h2 className="subheading-2">
             Input your details and we’ll try get the best seats for you!
           </h2>
         </div>
-        <form onSubmit={handleSubmit}>
-          <div>
-            <label htmlFor="name">Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              required
-              onChange={(e) =>
-                setFormData({ ...formData, name: e.target.value })
-              }
-            />
-          </div>
-          <div>
-            <label htmlFor="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              required
-              onChange={(e) =>
-                setFormData({ ...formData, email: e.target.value })
-              }
-            />
-          </div>
-          <div>
-            <label htmlFor="date">Date:</label>
-            <input
-              type="date"
-              id="date"
-              name="date"
-              value={formData.date}
-              required
-              min={new Date().toISOString().split("T")[0]}
-              onChange={(e) =>
-                setFormData({ ...formData, date: e.target.value })
-              }
-            />
-          </div>
-          <div>
-            <label htmlFor="time">Time:</label>
-            <select
-              id="time"
-              name="time"
-              value={formData.time}
-              required
-              onChange={(e) =>
-                setFormData({ ...formData, time: e.target.value })
-              }
-            >
-              {availableTimes.map((timeOption, index) => (
-                <option key={index} value={timeOption}>
-                  {timeOption}
-                </option>
-              ))}
-            </select>
-          </div>
-          <div>
-            <label htmlFor="guests">Number of guests:</label>
-            <input
-              type="number"
-              id="guests"
-              name="guests"
-              value={formData.guests}
-              required
-              min="0"
-              max="10"
-              onChange={(e) =>
-                setFormData({ ...formData, guests: e.target.value })
-              }
-            />
-          </div>
-          <div>
-            <label htmlFor="occasion">Occasion:</label>
-            <select
-              id="occasion"
-              name="occasion"
-              value={formData.occasion}
-              required
-              onChange={(e) =>
-                setFormData({ ...formData, occasion: e.target.value })
-              }
-            >
-              {availableOccasions.map((occasionOption, index) => (
-                <option key={index} value={occasionOption}>
-                  {occasionOption}
-                </option>
-              ))}
-            </select>
-          </div>
-          <div>
-            <button onClick={handlePreviousPageClick}>Previous Page</button>
-            <button type="submit">Submit reservation</button>
+        <form onSubmit={handleSubmit} className="form-container">
+          <label htmlFor="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value={formData.name}
+            required
+            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+          />
+
+          <label htmlFor="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            required
+            onChange={(e) =>
+              setFormData({ ...formData, email: e.target.value })
+            }
+          />
+
+          <label htmlFor="date">Date:</label>
+          <input
+            type="date"
+            id="date"
+            name="date"
+            value={formData.date}
+            required
+            min={new Date().toISOString().split("T")[0]}
+            onChange={(e) => setFormData({ ...formData, date: e.target.value })}
+          />
+
+          <label htmlFor="time">Time:</label>
+          <select
+            id="time"
+            name="time"
+            value={formData.time}
+            required
+            onChange={(e) => setFormData({ ...formData, time: e.target.value })}
+          >
+            {availableTimes.map((timeOption, index) => (
+              <option key={index} value={timeOption}>
+                {timeOption}
+              </option>
+            ))}
+          </select>
+
+          <label htmlFor="guests">Number of guests: Max 10</label>
+          <input
+            type="number"
+            id="guests"
+            name="guests"
+            value={formData.guests}
+            required
+            min="0"
+            max="10"
+            onChange={(e) =>
+              setFormData({ ...formData, guests: e.target.value })
+            }
+          />
+
+          <label htmlFor="occasion">Occasion:</label>
+          <select
+            id="occasion"
+            name="occasion"
+            value={formData.occasion}
+            required
+            onChange={(e) =>
+              setFormData({ ...formData, occasion: e.target.value })
+            }
+          >
+            {availableOccasions.map((occasionOption, index) => (
+              <option key={index} value={occasionOption}>
+                {occasionOption}
+              </option>
+            ))}
+          </select>
+
+          <div className="button-container">
+            <button onClick={handlePreviousPageClick} className="page-button">
+              Previous Page
+            </button>
+            <button className="submit-button" type="submit">
+              Submit
+            </button>
           </div>
         </form>
       </div>

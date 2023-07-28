@@ -4,8 +4,8 @@
   background-color: #495e57;
   display: grid;
   grid-template-columns: 1fr;
-  font-family: 'Markazi Text', serif;
-  color: #EDEFEE;
+  font-family: "Markazi Text", serif;
+  color: #edefee;
   text-align: center;
   place-items: center;
 }
@@ -45,10 +45,10 @@
 }
 
 .reserve-button {
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
   font-weight: 800;
   background-color: #edefee;
-  color: #333;
+  color: #333333;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
   cursor: pointer;
