@@ -1,0 +1,36 @@
+.bookingform {
+  height: 100vh;
+  background-color: #495e57;
+  font-family: "Karla", sans-serif;
+  color: #edefee;
+}
+
+.navbar {
+  background-color: #edefee;
+}
+
+.booking-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.booking-headings {
+  color: #edefee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.booking-heading-1 {
+  font-weight: 500;
+  font-size: 48px;
+}
+
+.booking-heading-2 {
+  font-weight: 500;
+  font-size: 32px;
+}
