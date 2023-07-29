@@ -3,7 +3,7 @@
   background-color: #495e57;
   color: #edefee;
   padding: 2rem;
-  font-family: 'Markazi Text', serif;
+  font-family: "Markazi Text", serif;
 }
 
 .testimonials-header {
@@ -43,15 +43,15 @@
 .about-text-2 {
   font-size: 32px;
   color: #edefee;
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
   font-weight: 900;
   text-align: center;
 }
 
 @media (min-width: 768px) {
   .testimonials-card {
-      grid-template-columns: 1fr;
-      padding: 2rem;
+    grid-template-columns: 1fr;
+    padding: 2rem;
   }
 }
 
@@ -60,13 +60,12 @@
     /* Adjust the grid-template-columns to create a two-column layout on larger screens */
     grid-template-columns: repeat(2, 1fr);
     padding: 3rem;
-}
+  }
 }
 
-
-@media (min-width:1440px) {
+@media (min-width: 1440px) {
   .testimonials-card {
     grid-template-columns: repeat(4, 1fr);
-    padding: 4rem;  
+    padding: 4rem;
   }
 }
