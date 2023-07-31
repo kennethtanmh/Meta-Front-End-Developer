@@ -1,4 +1,4 @@
-# Little Lemon Mediterranean Restaurant - Online Reservation Website
+# Little Lemon Restaurant - Online Reservation Website
 
 ![Little Lemon Logo](little-lemon/src/img/Logo.svg)
 
